@@ -1,5 +1,5 @@
 #!/bin/bash
-
+curl https://raw.githubusercontent.com/oCroso/homework/main/cmg2/example.log | \
 awk '{
     if ($1 ~ "reference") {
         reftemp=$2
@@ -60,4 +60,4 @@ awk '{
 		printf("%s %s\n", var, "discard");
 	}
     }
-}' < "$1"
+}'
