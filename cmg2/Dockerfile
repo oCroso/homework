@@ -1,5 +1,5 @@
-FROM frolvlad/alpine-bash
+FROM debian:latest
 
-COPY bootstrap.sh /
-RUN apt update && apt install curl
-ENTRYPOINT ["/bin/bash", "/bootstrap.sh"]
+COPY entrypoint.sh /
+RUN apt update && apt install curl gawk -y
+ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
