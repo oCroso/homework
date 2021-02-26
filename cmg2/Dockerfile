@@ -1,5 +1,5 @@
-FROM debian:latest
+FROM alpine:latest
 
 COPY entrypoint.sh /
-RUN apt update && apt install jq curl gawk -y
+RUN apk update && apk add bash curl jq gawk
 ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
