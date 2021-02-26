@@ -1,0 +1,9 @@
+logparser:
+  name: logparser
+  namespace: default
+  portName: logparser
+  port: 80
+  targetPort: 80
+revisionHistoryLimit: 1
+selectorLabels: logparser
+deploymentStrategy: RollingUpdate

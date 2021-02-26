@@ -1,0 +1,9 @@
+apiVersion: v2
+name: log-parser
+version: 1
+appVersion: 1
+kubeVersion: '^1.8.0-0'
+description: this parser queries a log output api endpoint for log metrics, and converts them to relevant info.
+maintainers:
+  - name: Timothy Adams
+    email: timadams@skipladdr.com

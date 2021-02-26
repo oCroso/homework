@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: log-parser
+  namespace: {{ .Values.logparser.namespace }}
+  labels: 
+    app: log-parser
+spec:
+  type: ClusterIP
+  selector:
+    app: logparser
+  ports:
+    - name: {{ .Values.logparser.portName }}
+      port: {{ .Values.logparser.port }}
+      protocol: TCP
+      targetPort: {{ .Values.logparser.targetPort }}
