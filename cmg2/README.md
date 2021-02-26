@@ -1,7 +1,7 @@
 # Containerized Log Parser for Environment Sensors
 CMG Homework
 
-The container is designed to hit a logging endpoint on a pseudo container that dispalys the logging for a series of environment monitors.
+The container is designed to hit a logging endpoint, via curl, on a pseudo-container that dispalys the logging for a series of environment monitors.
 
 The container uses awk to determine 
 
