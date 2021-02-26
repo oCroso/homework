@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-curl https://raw.githubusercontent.com/oCroso/homework/main/cmg2/example.log | \
+curl -s https://raw.githubusercontent.com/oCroso/homework/main/cmg2/example.log | \
 awk '{
     if ($1 ~ "reference") {
         reftemp=$2
