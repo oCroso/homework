@@ -18,7 +18,8 @@ temp-2 ultra-precise
 hum-1 keep
 hum-2 discard
 ```
-
+The container can be found here:
+https://hub.docker.com/repository/docker/ocroso/cmg-logparser
 
 Notes:
 - I chose a standard debian container as I needed a few more packages not available with alpine, and adding what I needed was just simpler this way.  Sure, the container is a whopping 50 Mb, but everything around it otherwise is super simple and idempotent and changes are easy to make (no gotchas or alpine nuances).
