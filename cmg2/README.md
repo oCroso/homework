@@ -13,17 +13,19 @@ thermometer temp-1
 And convert it to the following, more useful information:
 
 ```
-temp-1 precise
-temp-2 ultra-precise
-hum-1 keep
-hum-2 discard
+{
+"temp-1": "precise",
+"temp-2": "ultra precise",
+"hum-1": "keep",
+"hum-2": "discard"
+}
 ```
 The container can be found here:
 https://hub.docker.com/repository/docker/ocroso/cmg-logparser
 
 Notes:
-- I chose a standard debian container as I needed a few more packages not available with alpine, and adding what I needed was just simpler this way.  Sure, the container is a whopping 50 Mb, but everything around it otherwise is super simple and idempotent and changes are easy to make (no gotchas or alpine nuances).
-- As an SRE I would request back to the development team make a change in log output to support better logging (or make the change myself if possible).  The proposed change would be:
+- I chose a standard debian container for simplicity of the Dockerfile, I have now decided to change it to alpine.
+- In a production environment, I would request back to the development team to make a change in log output to support friendlier logging (or make the change myself if I have access).  The proposed change would be:
 
 From:
 
