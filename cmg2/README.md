@@ -25,6 +25,10 @@ And convert it to the following, more useful information:
 The container can be found here:
 https://hub.docker.com/repository/docker/ocroso/cmg-logparser
 
+to build simply clone this repository and run:
+
+`docker build .` from within the repo.
+
 ## Terraform Provision:
 
 WIP - Due to no Cloud Provider account at this time, may forego.  Deployment to Minikube proved successful.
