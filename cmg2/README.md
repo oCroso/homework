@@ -14,16 +14,19 @@ Notes:
 
 From:
 
-```thermometer temp-1
+```
+thermometer temp-1
 2007-04-05T22:00 72.4
 2007-04-05T22:00 71.4
-2007-04-05T22:00 73.4```
-
+2007-04-05T22:00 73.4
+```
 To:
 
-```2007-04-05T22:00 | thermometer | temp-1 | 72.4
+```
+2007-04-05T22:00 | thermometer | temp-1 | 72.4
 2007-04-05T22:00 | thermometer | temp-1 | 71.4
-2007-04-05T22:00 | thermometer | temp-1 | 73.4```
+2007-04-05T22:00 | thermometer | temp-1 | 73.4
+```
 
 This maintains quick readability, ease of data manipulation, ensures log reliability, and ensures a single log line contains all necessary information.
 
