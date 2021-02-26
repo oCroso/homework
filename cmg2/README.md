@@ -1,11 +1,23 @@
 # Containerized Log Parser for Environment Sensors
 CMG Homework
 
-The container is designed to hit a logging endpoint, via curl, on a pseudo-container that dispalys the logging for a series of environment monitors.
+The container is designed to hit a logging endpoint, via curl, on a pseudo-container that displays the logging for a series of environment monitors.
 
-The container uses awk to determine 
+The container uses awk to grab the appropriate data:
+```
+thermometer temp-1
+2007-04-05T22:00 72.4
+2007-04-05T22:00 71.4
+2007-04-05T22:00 73.4
+```
+And convert it to the following, more useful information:
 
-
+```
+temp-1 precise
+temp-2 ultra-precise
+hum-1 keep
+hum-2 discard
+```
 
 
 Notes:
