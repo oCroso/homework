@@ -1,4 +1,4 @@
-Containerized Log Parser for Environment Sensors
+# Containerized Log Parser for Environment Sensors
 CMG Homework
 
 The container is designed to hit a logging endpoint on a pseudo container that dispalys the logging for a series of environment monitors.
