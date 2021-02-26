@@ -61,4 +61,4 @@ awk '{
 		printf("%s %s\n", var, "discard");
 	}
     }
-}'
+}' | jq -R -n -c '[inputs|split(" ")|{(.[0]):.[1]}] | add' | jq
